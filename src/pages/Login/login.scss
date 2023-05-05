@@ -1,0 +1,48 @@
+
+.login {
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__pic {
+        width: 50%;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__title {
+        font-size: 26px;
+        text-align: center;
+        font-weight: 600;
+        color: #000;
+    }
+    &__input {
+        text-align: left;
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 0 0 10px;
+            border-radius: 5px;
+            border: none;
+            background: #D8D8D8;
+        }
+    }
+    &__button {
+        button {
+            width: 100%;
+            background: #007AFF;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            margin: 10px 0 0;
+        }
+    }
+}
