@@ -1,0 +1,121 @@
+.customer {
+  background: #f4f6f8;
+  height: 100vh;
+  padding: 0 50px;
+  &__add {
+    padding: 30px 0;
+    text-align: right;
+  }
+  &__button {
+    background: #0088ff;
+    border: none;
+    padding: 7px 15px;
+    font-weight: 500;
+    color: #fff;
+  }
+  &__box {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    padding-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  }
+  &__title {
+    padding: 12px 7px 0;
+    border-bottom: 1px solid #dee2e6;
+    span {
+      font-size: 17px;
+      font-weight: 400;
+      color: #0088ff;
+      border-bottom: 2px solid #0088ff;
+      margin: 0 50px;
+    }
+  }
+  &__tools {
+    margin: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__search {
+    width: 40%;
+    position: relative;
+    display: flex;
+
+    input {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-right: none;
+      padding: 0 10px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: #999;
+    }
+
+    input:focus {
+      color: #000;
+    }
+
+    button {
+      width: 40px;
+      height: 37px;
+      border: 1px solid #0088ff;
+      background: #0088ff;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+  &__filter {
+    width: 30%;
+    text-align: right;
+    select {
+      width: 70%;
+      height: 37px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0 7px;
+      color: #888;
+    }
+  }
+  &__content {
+    margin: 0 50px;
+  }
+  table {
+    border: 1px solid #dee2e6;
+    text-align: center;
+    th {
+      padding: 10px;
+      background: #f4f6f8;
+      text-align: center;
+    }
+    td {
+      padding: 10px;
+    }
+  }
+  &__line a {
+    color: #0088ff;
+  }
+  &__pagination {
+    text-align: center;
+    padding: 30px 0;
+    a {
+      color: black;
+      padding: 7px 15px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      border: 1px solid #ddd;
+      margin: 0 4px;
+    }
+  }
+
+  &__pagination a.active {
+    background-color: #0088ff;
+    color: white;
+    border: 1px solid #0088ff;
+  }
+
+  &__pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+}
