@@ -3,19 +3,19 @@ import { PUBLIC_URL } from '../utils/const';
 export const menu = [
   {
     name: 'Trang chủ',
-    icon: `${PUBLIC_URL}/icons/home.png`,
+    icon: `${PUBLIC_URL}/icons/home.svg`,
     link: '/',
     dropdown: [],
   },
   {
     name: 'Khách hàng',
-    icon: `${PUBLIC_URL}/icons/customer.png`,
+    icon: `${PUBLIC_URL}/icons/customer.svg`,
     link: '/customer-list',
     dropdown: [],
   },
   {
     name: 'Báo cáo',
-    icon: `${PUBLIC_URL}/icons/report.png`,
+    icon: `${PUBLIC_URL}/icons/report.svg`,
     link: '#',
     dropdown: [
       { name: 'Báo cáo Khách hàng', link: '/report-customer' },
