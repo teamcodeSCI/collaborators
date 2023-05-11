@@ -1,6 +1,6 @@
 .detailregistcontract {
   background: #f4f6f8;
-  padding: 50px;
+  padding: 40px 80px;
   height: 100vh;
   &__box {
     background: #fff;
@@ -9,7 +9,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   }
   &__title {
-    padding: 12px 7px 0;
+    padding: 12px 0;
     border-bottom: 1px solid #dee2e6;
     span {
       font-size: 20px;
@@ -23,7 +23,7 @@
     }
   }
   &__content {
-    margin: 30px 50px;
+    margin: 30px 40px;
   }
   &__content {
     display: flex;
