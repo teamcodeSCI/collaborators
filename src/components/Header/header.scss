@@ -16,18 +16,19 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 23px 0;
+    padding: 20px 0;
+    width: 20%;
+    gap: 8px;
     p {
-      margin: 0 0 2px;
+      margin: 0;
     }
     &:hover .header__dropdown {
       display: block;
     }
   }
   &__user {
-    width: 22%;
     img {
-      width: 100%;
+      width: 27px;
       height: auto;
       display: block;
     }
@@ -36,24 +37,17 @@
     transition: all 0.2s linear;
     display: none;
     position: absolute;
-    top: 87px;
-    width: 215px;
+    top: 67px;
+    width: 190px;
     background: #eee;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-    padding: 6px 20px;
+    padding: 0px 15px;
     text-align: left;
     ul {
       padding: 0;
-    }
-    li {
-      list-style: none;
-      padding: 5px 10px;
-      background: #fff;
-      border-radius: 5px;
-      margin: 10px 0;
     }
   }
 }

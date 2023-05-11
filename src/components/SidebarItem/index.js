@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './sidebarItem.scss';
 
 const SidebarItem = (props) => {
   const [isDropdown, setIsDropdown] = useState(false);
@@ -10,20 +11,20 @@ const SidebarItem = (props) => {
     <>
       {props.dropdown.length === 0 ? (
         <Link to={props.link}>
-          <div className='sidebar__text'>
+          <div className='sidebarItem__text'>
             <img src={props.icon} alt='' />
             <span style={{ color: '#fff' }}>{props.name}</span>
           </div>
         </Link>
       ) : (
         <li>
-          <div className='sidebar__text' onClick={handleOpenDropdown}>
+          <div className='sidebarItem__text' onClick={handleOpenDropdown}>
             <img src={props.icon} alt='' />
             <span style={{ color: '#fff' }}>{props.name}</span>
             <b>ˇ</b>
           </div>
           {isDropdown && (
-            <div class='sidebar__dropdown'>
+            <div class='sidebarItem__dropdown'>
               <ul>
                 {props.dropdown.map((item) => (
                   <li>

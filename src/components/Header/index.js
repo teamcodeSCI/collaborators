@@ -12,7 +12,7 @@ export const Header = () => {
         <div className='header__content'>
           <p>Phạm Thanh Hoa</p>
           <div className='header__user'>
-            <img src={`${PUBLIC_URL}/icons/user.png`} alt='' />
+            <img src={`${PUBLIC_URL}/icons/user.svg`} alt='' />
           </div>
           <div className='header__dropdown'>
             <ul>

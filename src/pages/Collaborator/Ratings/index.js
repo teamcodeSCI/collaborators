@@ -21,7 +21,7 @@ const Ratings = () => {
                 <td>500.000.000</td>
                 <td>
                   <Link to={'/detailratings'}>
-                    <img src={`${PUBLIC_URL}/icons/pen.png`} alt='' />
+                    <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
               </tr>
@@ -30,7 +30,7 @@ const Ratings = () => {
                 <td>400.000.000</td>
                 <td>
                   <Link to={'/detailratings'}>
-                    <img src={`${PUBLIC_URL}/icons/pen.png`} alt='' />
+                    <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
               </tr>
@@ -39,7 +39,7 @@ const Ratings = () => {
                 <td>300.000.000</td>
                 <td>
                   <Link to={'/detailratings'}>
-                    <img src={`${PUBLIC_URL}/icons/pen.png`} alt='' />
+                    <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
               </tr>
@@ -48,7 +48,7 @@ const Ratings = () => {
                 <td>200.000.000</td>
                 <td>
                   <Link to={'/detailratings'}>
-                    <img src={`${PUBLIC_URL}/icons/pen.png`} alt='' />
+                    <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
               </tr>
