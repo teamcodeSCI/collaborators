@@ -1,7 +1,7 @@
 .registercontract {
   background: #f4f6f8;
   height: 100vh;
-  padding: 50px;
+  padding: 40px 80px;
   &__box {
     background: #fff;
     border: 1px solid #dee2e6;
@@ -19,7 +19,7 @@
     }
   }
   &__content {
-    margin: 30px 50px;
+    margin: 30px 40px;
   }
   &__group {
     width: 100%;
@@ -46,7 +46,7 @@
   }
   &__submit {
     text-align: right;
-    margin: 0 50px;
+    margin: 0 40px;
   }
   &__button {
     background: #0088ff;

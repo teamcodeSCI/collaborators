@@ -1,7 +1,7 @@
 .detailratings {
   background: #f4f6f8;
   height: 100vh;
-  padding: 0 50px;
+  padding: 40px 80px;
 
   &__name {
     color: #000;
@@ -18,19 +18,19 @@
     margin-bottom: 40px;
   }
   &__title {
-    padding: 12px 7px 0;
+    padding: 12px 7px;
     border-bottom: 1px solid #dee2e6;
+    background: #f4f6f8;
     span {
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 400;
       color: #0088ff;
-      border-bottom: 2px solid #0088ff;
-      margin: 0 50px;
+      margin: 0 30px;
     }
   }
   &__content {
     display: flex;
-    padding: 50px;
+    padding: 40px;
   }
   table {
     border: 1px solid #dee2e6;

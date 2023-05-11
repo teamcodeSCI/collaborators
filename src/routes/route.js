@@ -35,3 +35,33 @@ export const dropdownheader = [
     link: '/logout',
   },
 ];
+
+export const customerList = [
+  {
+    id: 'kn123',
+    name: 'Nguyễn Hạ Vy',
+    phone: '0987654321',
+    address: 'Hà Nội',
+    group: 'Đến cửa',
+    created_at: '02/03/2023',
+    link: '/detail-customer',
+  },
+  {
+    id: 'kn456',
+    name: 'Nguyễn Văn B',
+    phone: '0987654321',
+    address: 'Hà Nam',
+    group: 'Thành công',
+    created_at: '02/03/2023',
+    link: '/detail-customer',
+  },
+  {
+    id: 'kn545',
+    name: 'Mai Thị Hiền',
+    phone: '0987654321',
+    address: 'Nam Định',
+    group: 'Không thành công',
+    created_at: '02/03/2023',
+    link: '/detail-customer',
+  },
+];

@@ -1,7 +1,7 @@
 .detailCustomer {
   background: #f4f6f8;
   height: 100vh;
-  padding: 0 50px;
+  padding: 0 80px;
   &__delete {
     padding: 30px 0;
     text-align: right;
@@ -18,11 +18,17 @@
     }
   }
   &__button {
-    background: #fff;
-    border: 1px solid red;
+    color: red;
     padding: 7px 15px;
     font-weight: 500;
-    color: #000;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s linear;
+    background: none;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid red;
+    }
   }
   &__box {
     background: #fff;
@@ -32,10 +38,11 @@
     margin-bottom: 40px;
   }
   &__title {
-    border-bottom: 1px solid #dee2e6;
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 12px 40px;
+    border-bottom: 1px solid #dee2e6;
+    background: #f4f6f8;
     span {
       font-size: 17px;
       font-weight: 400;
@@ -58,13 +65,13 @@
     td {
       border-bottom: 1px solid #dee2e6 !important;
       border-top: none !important;
-      padding: 10px 10px 10px 50px;
+      padding: 10px 10px 10px 40px;
       font-size: 16px;
     }
   }
   &__service {
     table th {
-      background: #f4f6f8;
+      padding: 12px 40px;
     }
   }
   &__group {
