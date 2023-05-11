@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PUBLIC_URL } from '../../utils/const';
+import Pagination from '../../components/Pagination';
 import './customer.scss';
 
 const Customer = () => {
@@ -125,16 +126,7 @@ const Customer = () => {
             </tbody>
           </table>
           <div className='customer__pagination'>
-            <button href='#'>&laquo;&laquo;</button>
-            <button href='#'>&laquo;</button>
-            <button href='#'>1</button>
-            <button class='active' href='#'>
-              2
-            </button>
-            <button href='#'>3</button>
-            <button href='#'>4</button>
-            <button href='#'>&raquo;</button>
-            <button href='#'>&raquo;&raquo;</button>
+            <Pagination pageCount={10} pageNum={10} range={6} />
           </div>
         </div>
       </div>

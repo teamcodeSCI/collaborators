@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './headerItem.scss';
 const HeaderItem = (props) => {
   return (
     <>
       <Link to={props.link}>
-        <li>{props.name}</li>
+        <li className='headerItem__menu'>{props.name}</li>
       </Link>
     </>
   );
