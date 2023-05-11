@@ -23,7 +23,7 @@ function App() {
         <Route path='/' element={<Navigate to='/customer-list' />} />
         <Route path='/customer-list' element={<Customer />} />
         <Route path='/add-customer' element={<AddCustomer />} />
-        <Route path='/detail-customer' element={<DetailCustomer />} />
+        <Route path='/detail-customer/:id' element={<DetailCustomer />} />
 
         {/* // */}
 

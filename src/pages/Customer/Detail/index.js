@@ -1,7 +1,12 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import './detailCustomer.scss';
 
 const DetailCustomer = () => {
+  const location = useLocation();
+  const pathArr = location.pathname.split('/');
+  const idCustomer = pathArr[pathArr.length - 1];
+  console.log('location: ', idCustomer);
   return (
     <div className='detailCustomer'>
       <div className='detailCustomer__delete'>
