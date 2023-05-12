@@ -12,6 +12,8 @@ import Customer from './pages/Customer';
 import AddCustomer from './pages/Customer/Add';
 import DetailCustomer from './pages/Customer/Detail';
 import Login from './pages/Login';
+import Financialreport from './pages/Report/FinancialReport';
+import Servicereport from './pages/Report/ServiceReport';
 
 function App() {
   return (
@@ -36,6 +38,11 @@ function App() {
 
         <Route path='/ratings' element={<Ratings />} />
         <Route path='/detail-ratings' element={<Detailratings />} />
+
+        {/* // */}
+
+        <Route path='/report-service' element={<Servicereport />} />
+        <Route path='/report-finance' element={<Financialreport />} />
       </Route>
     </Routes>
   );
