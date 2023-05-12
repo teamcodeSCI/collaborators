@@ -1,5 +1,4 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { Header } from './components/Header';
 import Home from './layouts/Home';
 import Collaborator from './pages/Collaborator';
 import Contract from './pages/Collaborator/Contract';
@@ -29,14 +28,14 @@ function App() {
 
         <Route path='/collaborator' element={<Collaborator />} />
         <Route path='/infomation' element={<Infomation />} />
-        <Route path='/resetpassword' element={<Resetpassword />} />
+        <Route path='/reset-password' element={<Resetpassword />} />
 
         <Route path='/contract' element={<Contract />} />
-        <Route path='/registercontract' element={<Registercontract />} />
-        <Route path='/detailregistcontract' element={<Detailregistcontract />} />
+        <Route path='/register-contract' element={<Registercontract />} />
+        <Route path='/detail-regist-contract' element={<Detailregistcontract />} />
 
         <Route path='/ratings' element={<Ratings />} />
-        <Route path='/detailratings' element={<Detailratings />} />
+        <Route path='/detail-ratings' element={<Detailratings />} />
       </Route>
     </Routes>
   );

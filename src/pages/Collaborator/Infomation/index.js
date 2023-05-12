@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { PUBLIC_URL } from '../../../utils/const';
 import './infomation.scss';
 
 const Infomation = () => {
   return (
     <div className='infomation'>
+      <Link to={'/collaborator'} className='addCustomer__arrow'>
+        <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
+        Quay lại
+      </Link>
       <div className='infomation__box'>
         <div className='infomation__title'>
           <span>Thông tin tài khoản</span>
@@ -51,7 +56,7 @@ const Infomation = () => {
           </div>
         </div>
         <div className='infomation__submit'>
-          <Link to={'/resetpassword'} className='infomation__pas'>
+          <Link to={'/reset-password'} className='infomation__pas'>
             Đổi mật khẩu
           </Link>
           <button className='infomation__button'>Cập nhật</button>

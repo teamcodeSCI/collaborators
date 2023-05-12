@@ -1,5 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { PUBLIC_URL } from '../../../utils/const';
 import './detailCustomer.scss';
 
 const DetailCustomer = () => {
@@ -10,9 +12,10 @@ const DetailCustomer = () => {
   return (
     <div className='detailCustomer'>
       <div className='detailCustomer__delete'>
-        <div className='detailCustomer__name'>
-          Chị <b>Nguyễn Hạ Vy</b>
-        </div>
+        <Link to={'/customer-list'} className='detailCustomer__arrow'>
+          <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
+          Quay lại
+        </Link>
         <button className='detailCustomer__button'>Xóa khách hàng</button>
       </div>
       <div className='detailCustomer__box'>
@@ -24,6 +27,10 @@ const DetailCustomer = () => {
           <div className='detailCustomer__info'>
             <table class='table'>
               <tbody>
+                <tr>
+                  <th>Họ tên:</th>
+                  <td>Nguyễn Hạ Vy</td>
+                </tr>
                 <tr>
                   <th>Ngày sinh:</th>
                   <td>07/07/2000</td>

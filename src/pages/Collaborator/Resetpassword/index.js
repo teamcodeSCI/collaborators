@@ -1,9 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { PUBLIC_URL } from '../../../utils/const';
 import './resetpassword.scss';
 
 const Resetpassword = () => {
   return (
     <div className='resetpassword'>
+      <Link to={'/infomation'} className='resetpassword__arrow'>
+        <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
+        Quay lại
+      </Link>
       <div className='resetpassword__box'>
         <div className='resetpassword__title'>
           <span>Đặt lại mật khẩu</span>

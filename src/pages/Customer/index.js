@@ -45,29 +45,9 @@ const Customer = () => {
                 <th>Nhóm KH</th>
                 <th>Ngày tạo</th>
               </tr>
-              {/* <tr> */}
               {customerList.map((item) => (
                 <CustomerList key={item.name} {...item} />
               ))}
-              {/* <td className='customer__line'>
-                  <Link to={'/detail-customer'}>kn123</Link>
-                </td>
-                <td>
-                  <Link to={'/detail-customer'}>Nguyễn Hạ Vy</Link>
-                </td>
-                <td>
-                  <Link to={'/detail-customer'}>0987654321</Link>
-                </td>
-                <td>
-                  <Link to={'/detail-customer'}>Hà Nội</Link>
-                </td>
-                <td>
-                  <Link to={'/detail-customer'}>Không thành công</Link>
-                </td>
-                <td>
-                  <Link to={'/detail-customer'}>01/02/2022</Link>
-                </td> */}
-              {/* </tr> */}
             </tbody>
           </table>
           <div className='customer__pagination'>
