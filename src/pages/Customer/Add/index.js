@@ -1,9 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { PUBLIC_URL } from '../../../utils/const';
 import './addCustomer.scss';
 
 const AddCustomer = () => {
   return (
     <div className='addCustomer'>
+      <Link to={'/customer-list'} className='addCustomer__arrow'>
+        <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
+        Quay lại
+      </Link>
       <div className='addCustomer__box'>
         <div className='addCustomer__title'>
           <span>Thêm mới khách hàng</span>

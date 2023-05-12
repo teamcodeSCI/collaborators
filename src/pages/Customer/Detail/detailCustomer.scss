@@ -17,17 +17,34 @@
       font-size: 19px;
     }
   }
+  &__arrow {
+    color: #888;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    border: 1px solid transparent;
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    &:hover {
+      border-bottom: 1px solid #888;
+    }
+  }
   &__button {
     color: red;
-    padding: 7px 15px;
     font-weight: 500;
     cursor: pointer;
     border: none;
     transition: all 0.2s linear;
     background: none;
     border: 1px solid transparent;
+    font-size: 17px;
+    padding: 0;
     &:hover {
-      border: 1px solid red;
+      border-bottom: 1px solid red;
     }
   }
   &__box {
@@ -52,7 +69,11 @@
   &__edit {
     font-size: 17px;
     font-weight: 400;
-    color: #0088ff;
+    background: #0088ff;
+    padding: 5px 8px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
   }
   &__content {
     display: flex;

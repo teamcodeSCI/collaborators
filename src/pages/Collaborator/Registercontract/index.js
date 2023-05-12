@@ -15,7 +15,7 @@ const Registercontract = () => {
           </div>
         </div>
         <div className='registercontract__submit'>
-          <Link to={'/detailregistcontract'} className='registercontract__button'>
+          <Link to={'/detail-regist-contract'} className='registercontract__button'>
             Đăng ký ngay
           </Link>
         </div>
