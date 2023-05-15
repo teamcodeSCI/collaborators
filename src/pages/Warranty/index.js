@@ -10,7 +10,7 @@ const warranty = () => {
         </div>
         <div className='warranty__content'>
           <div className='warranty__info'>
-            <table class='table'>
+            <table className='table'>
               <tbody>
                 <tr>
                   <th>Họ tên:</th>
@@ -36,7 +36,7 @@ const warranty = () => {
             </table>
           </div>
           <div className='warranty__info'>
-            <table class='table'>
+            <table className='table'>
               <tbody>
                 <tr>
                   <th>Nhóm khách hàng:</th>
@@ -64,7 +64,7 @@ const warranty = () => {
           <span>Thông tin dịch vụ</span>
         </div>
         <div className='warranty__service'>
-          <table class='table'>
+          <table className='table'>
             <tbody>
               <tr>
                 <th>Dịch vụ</th>
