@@ -1,5 +1,4 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { Header } from './components/Header';
 import Home from './layouts/Home';
 import Collaborator from './pages/Collaborator';
 import Contract from './pages/Collaborator/Contract';
@@ -13,6 +12,8 @@ import Customer from './pages/Customer';
 import AddCustomer from './pages/Customer/Add';
 import DetailCustomer from './pages/Customer/Detail';
 import Login from './pages/Login';
+import Financialreport from './pages/Report/FinancialReport';
+import Servicereport from './pages/Report/ServiceReport';
 
 function App() {
   return (
@@ -29,14 +30,19 @@ function App() {
 
         <Route path='/collaborator' element={<Collaborator />} />
         <Route path='/infomation' element={<Infomation />} />
-        <Route path='/resetpassword' element={<Resetpassword />} />
+        <Route path='/reset-password' element={<Resetpassword />} />
 
         <Route path='/contract' element={<Contract />} />
-        <Route path='/registercontract' element={<Registercontract />} />
-        <Route path='/detailregistcontract' element={<Detailregistcontract />} />
+        <Route path='/register-contract' element={<Registercontract />} />
+        <Route path='/detail-regist-contract' element={<Detailregistcontract />} />
 
         <Route path='/ratings' element={<Ratings />} />
-        <Route path='/detailratings' element={<Detailratings />} />
+        <Route path='/detail-ratings' element={<Detailratings />} />
+
+        {/* // */}
+
+        <Route path='/report-service' element={<Servicereport />} />
+        <Route path='/report-finance' element={<Financialreport />} />
       </Route>
     </Routes>
   );

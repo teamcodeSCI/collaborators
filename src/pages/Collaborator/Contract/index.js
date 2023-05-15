@@ -1,10 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { PUBLIC_URL } from '../../../utils/const';
 import Registercontract from '../Registercontract';
 import './contract.scss';
 
 const Contract = () => {
   return (
     <div className='contract'>
+      <Link to={'/collaborator'} className='contract__arrow'>
+        <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
+        Quay lại
+      </Link>
       <div className='contract__box'>
         <div className='contract__title'>
           <span>Thông tin hợp đồng</span>

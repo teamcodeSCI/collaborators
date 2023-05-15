@@ -1,6 +1,20 @@
 .contract {
   background: #f4f6f8;
-  padding: 40px 80px;
+  padding: 20px 80px;
+  &__arrow {
+    color: #888;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    border: 1px solid transparent;
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+  }
   &__box {
     background: #fff;
     border: 1px solid #dee2e6;

@@ -1,10 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PUBLIC_URL } from '../../../utils/const';
 import './detailratings.scss';
 
 const Detailratings = () => {
   return (
     <div className='detailratings'>
+      <Link to={'/ratings'} className='detailratings__arrow'>
+        <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
+        Quay lại
+      </Link>
       <div className='detailratings__name'>Chi tiết hoa hồng từng hạng thẻ</div>
       <div className='detailratings__box'>
         <div className='detailratings__title'>

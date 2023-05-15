@@ -6,6 +6,10 @@ import './ratings.scss';
 const Ratings = () => {
   return (
     <div className='ratings'>
+      <Link to={'/collaborator'} className='ratings__arrow'>
+        <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
+        Quay lại
+      </Link>
       <div className='ratings__name'>Hạng thẻ thành viên</div>
       <div className='ratings__box'>
         <div className='ratings__content'>
@@ -20,7 +24,7 @@ const Ratings = () => {
                 <td>Hạng A</td>
                 <td>500.000.000</td>
                 <td>
-                  <Link to={'/detailratings'}>
+                  <Link to={'/detail-ratings'}>
                     <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
@@ -29,7 +33,7 @@ const Ratings = () => {
                 <td>Hạng B</td>
                 <td>400.000.000</td>
                 <td>
-                  <Link to={'/detailratings'}>
+                  <Link to={'/detail-ratings'}>
                     <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
@@ -38,7 +42,7 @@ const Ratings = () => {
                 <td>Hạng C</td>
                 <td>300.000.000</td>
                 <td>
-                  <Link to={'/detailratings'}>
+                  <Link to={'/detail-ratings'}>
                     <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
@@ -47,7 +51,7 @@ const Ratings = () => {
                 <td>Hạng D</td>
                 <td>200.000.000</td>
                 <td>
-                  <Link to={'/detailratings'}>
+                  <Link to={'/detail-ratings'}>
                     <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
