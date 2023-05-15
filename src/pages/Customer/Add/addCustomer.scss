@@ -1,7 +1,4 @@
 .addCustomer {
-  background: #f4f6f8;
-  height: 100vh;
-  padding: 20px 80px;
   &__box {
     background: #fff;
     border: 1px solid #dee2e6;
@@ -59,9 +56,17 @@
       border-radius: 5px;
     }
   }
+  &__men {
+    cursor: pointer;
+    input,
+    label {
+      cursor: pointer;
+    }
+  }
   &__gender {
     display: flex;
     gap: 40px;
+    margin-top: 5px;
     input {
       width: auto;
       margin: 0 5px;
