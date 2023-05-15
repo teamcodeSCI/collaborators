@@ -24,7 +24,7 @@ const Servicereport = () => {
           </div>
         </div>
         <div className='servicereport__content'>
-          <table class='table'>
+          <table className='table'>
             <tbody>
               <tr>
                 <th>Dịch vụ</th>
