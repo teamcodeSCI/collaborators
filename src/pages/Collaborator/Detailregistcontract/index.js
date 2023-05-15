@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PUBLIC_URL } from '../../../utils/const';
 import './detailregistcontract.scss';
-
+import Input from '../../../components/Input';
+const data = {
+  name: '',
+  phone: '',
+  email: '',
+  address: '',
+  gender: '',
+  commit: '',
+  identification: '',
+};
 const Detailregistcontract = () => {
+  const [info, setInfo] = useState(data);
+  const handleInfo = (e) => {
+    setInfo({ ...info, [e.target.name]: e.target.value });
+  };
   return (
     <div className='detailregistcontract'>
       <Link to={'/contract'} className='detailregistcontract__arrow'>
@@ -15,41 +28,27 @@ const Detailregistcontract = () => {
           <span>Đăng ký hợp đồng</span>
           <p>Vui lòng điền thông tin chính xác</p>
         </div>
+
         <div className='detailregistcontract__content'>
-          <div className='detailregistcontract__group'>
-            <label>
-              Họ và tên<span>*</span>
-            </label>
-            <input type='text' value='Phạm Thanh Hoa' />
-          </div>
-          <div className='detailregistcontract__group'>
-            <label>
-              Số điện thoại <span>*</span>
-            </label>
-            <input type='text' value='0987654321' />
-          </div>
-          <div className='detailregistcontract__group'>
-            <label>Email</label>
-            <input type='email' value='hoa@gmail.com' />
-          </div>
-          <div className='detailregistcontract__group'>
-            <label>Địa chỉ</label>
-            <input type='text' value='Hà Nội' />
-          </div>
-          <div className='detailregistcontract__group'>
-            <label>Giới tính</label>
-            <input type='text' value='Nữ' />
-          </div>
-          <div className='detailregistcontract__group'>
-            <label>
-              Cam kết doanh số / tháng <span>*</span>
-            </label>
-            <input type='text' value='500.000.000' />
-          </div>
-          <div className='detailregistcontract__group'>
-            <label>CCCD</label>
-            <input type='text' value='124636472674' />
-          </div>
+          <Input name='name' title={'Họ và tên'} value={info.name} handleValue={handleInfo} require={true} />
+          <Input name='phone' title={'Số điện thoại'} value={info.phone} handleValue={handleInfo} require={true} />
+          <Input name='email' title={'Email'} value={info.email} handleValue={handleInfo} require={false} />
+          <Input name='address' title={'Địa chỉ'} value={info.address} handleValue={handleInfo} require={false} />
+          <Input name='gender' title={'Giới tính'} value={info.gender} handleValue={handleInfo} require={false} />
+          <Input
+            name='commit'
+            title={'Cam kết doanh số / tháng'}
+            value={info.commit}
+            handleValue={handleInfo}
+            require={true}
+          />
+          <Input
+            name='identification'
+            title={'CCCD'}
+            value={info.identification}
+            handleValue={handleInfo}
+            require={true}
+          />
         </div>
         <div className='detailregistcontract__submit'>
           <button className='detailregistcontract__button'>Đăng ký</button>
