@@ -7,7 +7,7 @@ import Detailregistcontract from './pages/Collaborator/Detailregistcontract';
 import Infomation from './pages/Collaborator/Infomation';
 import Ratings from './pages/Collaborator/Ratings';
 import Registercontract from './pages/Collaborator/Registercontract';
-import Resetpassword from './pages/Collaborator/Resetpassword';
+
 import Customer from './pages/Customer';
 import AddCustomer from './pages/Customer/Add';
 import DetailCustomer from './pages/Customer/Detail';
@@ -32,7 +32,6 @@ function App() {
 
         <Route path='/collaborator' element={<Collaborator />} />
         <Route path='/infomation' element={<Infomation />} />
-        <Route path='/reset-password' element={<Resetpassword />} />
 
         <Route path='/contract' element={<Contract />} />
         <Route path='/register-contract' element={<Registercontract />} />
