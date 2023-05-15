@@ -13,7 +13,7 @@ const Ratings = () => {
       <div className='ratings__name'>Hạng thẻ thành viên</div>
       <div className='ratings__box'>
         <div className='ratings__content'>
-          <table class='table'>
+          <table className='table'>
             <tbody>
               <tr>
                 <th>Hạng thành viên</th>

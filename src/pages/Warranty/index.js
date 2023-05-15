@@ -1,30 +1,15 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { PUBLIC_URL } from '../../../utils/const';
-import './detailCustomer.scss';
+import './warranty.scss';
 
-const DetailCustomer = () => {
-  const location = useLocation();
-  const pathArr = location.pathname.split('/');
-  const idCustomer = pathArr[pathArr.length - 1];
-  console.log('location: ', idCustomer);
+const warranty = () => {
   return (
-    <div className='detailCustomer'>
-      <div className='detailCustomer__delete'>
-        <Link to={'/customer-list'} className='detailCustomer__arrow'>
-          <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
-          Quay lại
-        </Link>
-        <button className='detailCustomer__button'>Xóa khách hàng</button>
-      </div>
-      <div className='detailCustomer__box'>
-        <div className='detailCustomer__title'>
+    <div className='warranty'>
+      <div className='warranty__box'>
+        <div className='warranty__title'>
           <span>Thông tin cá nhân</span>
-          <div className='detailCustomer__edit'>Cập nhật</div>
         </div>
-        <div className='detailCustomer__content'>
-          <div className='detailCustomer__info'>
+        <div className='warranty__content'>
+          <div className='warranty__info'>
             <table className='table'>
               <tbody>
                 <tr>
@@ -50,7 +35,7 @@ const DetailCustomer = () => {
               </tbody>
             </table>
           </div>
-          <div className='detailCustomer__info'>
+          <div className='warranty__info'>
             <table className='table'>
               <tbody>
                 <tr>
@@ -74,37 +59,47 @@ const DetailCustomer = () => {
           </div>
         </div>
       </div>
-      <div className='detailCustomer__box'>
-        <div className='detailCustomer__title'>
+      <div className='warranty__box'>
+        <div className='warranty__title'>
           <span>Thông tin dịch vụ</span>
         </div>
-        <div className='detailCustomer__service'>
+        <div className='warranty__service'>
           <table className='table'>
             <tbody>
               <tr>
                 <th>Dịch vụ</th>
                 <th>Doanh thu</th>
+                <th>Ngày thực hiện</th>
+                <th>Bảo hành</th>
               </tr>
               <tr>
                 <td>Cắt mí plasma</td>
                 <td>10.000.000</td>
+                <td>02/02/2022</td>
+                <td>30.04/2022</td>
               </tr>
               <tr>
-                <td>Nâng mũi</td>
-                <td>40.000.000</td>
+                <td>Cắt mí plasma</td>
+                <td>10.000.000</td>
+                <td>02/02/2022</td>
+                <td>30.04/2022</td>
               </tr>
               <tr>
-                <td>Nâng ngực</td>
-                <td>70.000.000</td>
+                <td>Cắt mí plasma</td>
+                <td>10.000.000</td>
+                <td>02/02/2022</td>
+                <td>30.04/2022</td>
               </tr>
               <tr>
-                <td>Hút mỡ bụng</td>
-                <td>30.000.000</td>
+                <td>Cắt mí plasma</td>
+                <td>10.000.000</td>
+                <td>02/02/2022</td>
+                <td>30.04/2022</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div className='detailCustomer__group'>
+        <div className='warranty__group'>
           <button>
             Tổng doanh thu : <b>135 triệu</b>
           </button>
@@ -114,4 +109,4 @@ const DetailCustomer = () => {
   );
 };
 
-export default DetailCustomer;
+export default warranty;

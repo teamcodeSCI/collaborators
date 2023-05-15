@@ -24,7 +24,7 @@ const Financialreport = () => {
           </div>
         </div>
         <div className='financialreport__content'>
-          <table class='table'>
+          <table className='table'>
             <tbody>
               <tr>
                 <th>Mã khách hàng</th>
@@ -89,7 +89,7 @@ const Financialreport = () => {
             </tbody>
           </table>
           <div className='financialreport__group'>
-            <table class='table'>
+            <table className='table'>
               <tbody>
                 <tr>
                   <td></td>

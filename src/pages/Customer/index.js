@@ -35,7 +35,7 @@ const Customer = () => {
           </div>
         </div>
         <div className='customer__content'>
-          <table class='table'>
+          <table className='table'>
             <tbody>
               <tr>
                 <th>Mã KH</th>

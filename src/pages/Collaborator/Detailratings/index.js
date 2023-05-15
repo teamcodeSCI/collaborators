@@ -16,7 +16,7 @@ const Detailratings = () => {
           <span>Hạng A (Doanh số: 500.000.000)</span>
         </div>
         <div className='detailratings__content'>
-          <table class='table'>
+          <table className='table'>
             <tbody>
               <tr>
                 <th>Dịch vụ</th>
