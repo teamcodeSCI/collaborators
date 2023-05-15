@@ -25,7 +25,7 @@ const DetailCustomer = () => {
         </div>
         <div className='detailCustomer__content'>
           <div className='detailCustomer__info'>
-            <table class='table'>
+            <table className='table'>
               <tbody>
                 <tr>
                   <th>Họ tên:</th>
@@ -51,7 +51,7 @@ const DetailCustomer = () => {
             </table>
           </div>
           <div className='detailCustomer__info'>
-            <table class='table'>
+            <table className='table'>
               <tbody>
                 <tr>
                   <th>Nhóm khách hàng:</th>
@@ -79,7 +79,7 @@ const DetailCustomer = () => {
           <span>Thông tin dịch vụ</span>
         </div>
         <div className='detailCustomer__service'>
-          <table class='table'>
+          <table className='table'>
             <tbody>
               <tr>
                 <th>Dịch vụ</th>

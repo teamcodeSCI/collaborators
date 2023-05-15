@@ -79,7 +79,7 @@ const Servicereport = () => {
             </tbody>
           </table>
           <div className='servicereport__group'>
-            <table class='table'>
+            <table className='table'>
               <tbody>
                 <tr>
                   <td>Tổng</td>
