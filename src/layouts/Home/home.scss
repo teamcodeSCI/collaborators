@@ -2,17 +2,16 @@
   width: 100%;
   display: flex;
   &__sidebar {
-    width: 13%;
+    max-width: 230px;
+    min-width: 230px;
   }
   &__box {
-    width: 87%;
+    width: 100%;
   }
-  @media (max-width: 1440px) {
-    &__sidebar {
-      width: 15%;
-    }
-    &__box {
-      width: 85%;
-    }
+  &__main {
+    background: #f4f6f8;
+    overflow-x: auto;
+    height: calc(100vh - 54px);
+    padding: 20px 80px 40px;
   }
 }

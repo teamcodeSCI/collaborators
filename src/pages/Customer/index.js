@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PUBLIC_URL } from '../../utils/const';
 import Pagination from '../../components/Pagination';
@@ -7,6 +7,15 @@ import { customerList } from '../../routes/route';
 import CustomerList from '../../components/CustomerList';
 
 const Customer = () => {
+  const [search, setSearch] = useState('');
+  const [filter, setFilter] = useState('');
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
+  const handleFilter = (e) => {
+    setFilter(e.target.value);
+  };
+
   return (
     <div className='customer'>
       <div className='customer__add'>
@@ -20,13 +29,13 @@ const Customer = () => {
         </div>
         <div className='customer__tools'>
           <div className='customer__search'>
-            <input type='text' placeholder='Tìm kiếm theo mã khách hàng tên khách hàng số điện thoại ...' />
-            <button type='submit'>
+            <input onChange={handleSearch} value={search} name='search' type='text' placeholder='Tìm kiếm ...' />
+            <button>
               <img src={`${PUBLIC_URL}/icons/search.png`} alt='' />
             </button>
           </div>
           <div className='customer__filter'>
-            <select name=''>
+            <select name='filter' onChange={handleFilter} value={filter}>
               <option value='Tất cả khách hàng'>Tất cả khách hàng</option>
               <option value='Đến cửa'>Đến cửa</option>
               <option value='Thành công'>Thành công</option>
