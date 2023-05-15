@@ -24,13 +24,11 @@ const SidebarItem = (props) => {
             <b>ˇ</b>
           </div>
           {isDropdown && (
-            <div class='sidebarItem__dropdown'>
+            <div className='sidebarItem__dropdown'>
               <ul>
                 {props.dropdown.map((item) => (
-                  <li>
-                    <Link key={item.link} to={item.link}>
-                      {item.name}
-                    </Link>
+                  <li key={item.link}>
+                    <Link to={item.link}>{item.name}</Link>
                   </li>
                 ))}
               </ul>

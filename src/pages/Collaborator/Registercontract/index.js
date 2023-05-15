@@ -10,9 +10,7 @@ const Registercontract = () => {
           <span>Đăng ký hợp đồng</span>
         </div>
         <div className='registercontract__content'>
-          <div className='registercontract__group'>
-            <input type='text' value='Bạn chưa ký hợp đồng' />
-          </div>
+          <div className='registercontract__group'>Bạn chưa ký hợp đồng</div>
         </div>
         <div className='registercontract__submit'>
           <Link to={'/detail-regist-contract'} className='registercontract__button'>
