@@ -66,11 +66,21 @@
       padding: 10px 20px;
       background: #f4f6f8;
       text-align: left;
-      width: 33%;
+      &:nth-child(2) {
+        width: 20%;
+      }
+      &:nth-child(3) {
+        width: 20%;
+      }
     }
     td {
       padding: 10px 20px;
-      width: 33%;
+      &:nth-child(2) {
+        width: 20%;
+      }
+      &:nth-child(3) {
+        width: 20%;
+      }
     }
   }
   &__line a {
@@ -83,5 +93,12 @@
     color: #000;
     font-weight: 500;
     margin-top: 30px;
+    tr {
+      transition: all 0.2s linear;
+      &:hover {
+        background: #0088ff;
+        color: #fff;
+      }
+    }
   }
 }

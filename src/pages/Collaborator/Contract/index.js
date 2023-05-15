@@ -21,13 +21,13 @@ const Contract = () => {
             <label>
               Ngày ký hợp đồng<span>*</span>
             </label>
-            <input type='text' value='01/01/2021' />
+            <input type='text' value='01/01/2021' disabled />
           </div>
           <div className='contract__group'>
             <label>
               Doanh số cam kết / tháng <span>*</span>
             </label>
-            <input type='text' value='500.000.000đ' />
+            <input type='text' value='500.000.000đ' disabled />
           </div>
         </div>
         <div className='contract__des'>

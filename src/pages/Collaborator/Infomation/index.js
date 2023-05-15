@@ -20,39 +20,39 @@ const Infomation = () => {
             <label>
               Họ và tên<span>*</span>
             </label>
-            <input type='text' value='Phạm Thanh Hoa' />
+            <input type='text' value='Phạm Thanh Hoa' disabled />
           </div>
           <div className='infomation__group'>
             <label>
               Số điện thoại <span>*</span>
             </label>
-            <input type='text' value='0987654321' />
+            <input type='text' value='0987654321' disabled />
           </div>
           <div className='infomation__group'>
             <label>Email</label>
-            <input type='email' value='hoa@gmail.com' />
+            <input type='email' value='hoa@gmail.com' disabled />
           </div>
           <div className='infomation__group'>
             <label>Địa chỉ</label>
-            <input type='text' value='Hà Nội' />
+            <input type='text' value='Hà Nội' disabled />
           </div>
           <div className='infomation__group'>
             <label>Giới tính</label>
-            <input type='text' value='Nữ' />
+            <input type='text' value='Nữ' disabled />
           </div>
           <div className='infomation__group'>
             <label>
               Hạng thành viên <span>*</span>
             </label>
-            <input type='text' value='Hạng A' />
+            <input type='text' value='Hạng A' disabled />
           </div>
           <div className='infomation__group'>
             <label>Quản lý trực tiếp</label>
-            <input type='text' value='Nguyễn Văn B' />
+            <input type='text' value='Nguyễn Văn B' disabled />
           </div>
           <div className='infomation__group'>
             <label>Ngày vào</label>
-            <input type='text' value='22/01/2022' />
+            <input type='text' value='22/01/2022' disabled />
           </div>
         </div>
         <div className='infomation__submit'>

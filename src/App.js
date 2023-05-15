@@ -11,6 +11,7 @@ import Resetpassword from './pages/Collaborator/Resetpassword';
 import Customer from './pages/Customer';
 import AddCustomer from './pages/Customer/Add';
 import DetailCustomer from './pages/Customer/Detail';
+import Warranty from './pages/Warranty';
 import Login from './pages/Login';
 import Financialreport from './pages/Report/FinancialReport';
 import Servicereport from './pages/Report/ServiceReport';
@@ -19,6 +20,7 @@ function App() {
   return (
     <Routes>
       <Route path='/login' element={<Login />}></Route>
+      <Route path='/warranty' element={<Warranty />}></Route>
 
       <Route path='/' element={<Home />}>
         <Route path='/' element={<Navigate to='/customer-list' />} />
