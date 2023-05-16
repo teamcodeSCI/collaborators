@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PUBLIC_URL } from '../../../utils/const';
 import './addCustomer.scss';
-
+import Input from '../../../components/Input';
+const data = {
+  name: '',
+  phone: '',
+  email: '',
+  address: '',
+  gender: '',
+  desiderate: '',
+  age: '',
+};
 const AddCustomer = () => {
+  const [info, setInfo] = useState(data);
+  const handleInfo = (e) => {
+    setInfo({ ...info, [e.target.name]: e.target.value });
+  };
   return (
     <div className='addCustomer'>
       <Link to={'/customer-list'} className='addCustomer__arrow'>
@@ -15,46 +28,34 @@ const AddCustomer = () => {
           <span>Thêm mới khách hàng</span>
         </div>
         <div className='addCustomer__content'>
-          <div className='addCustomer__group'>
-            <label>
-              Họ tên KH <span>*</span>
-            </label>
-            <input type='text' value='' />
-          </div>
-          <div className='addCustomer__group'>
-            <label>
-              Điểm đau (mong muốn) <span>*</span>
-            </label>
-            <input type='text' value='' />
-          </div>
-          <div className='addCustomer__group'>
-            <label>Số điện thoại</label>
-            <input type='text' value='' />
-          </div>
-          <div className='addCustomer__group'>
-            <label>Địa chỉ</label>
-            <input type='text' value='' />
-          </div>
-          <div className='addCustomer__group'>
-            <label>Tuổi</label>
-            <input type='text' value='' />
-          </div>
+          <Input name='name' title={'Họ và tên'} value={info.name} handleValue={handleInfo} require={true} />
+          <Input
+            name='name'
+            title={'Điểm đau (mong muốn)'}
+            value={info.desiderate}
+            handleValue={handleInfo}
+            require={true}
+          />
+          <Input name='phone' title={'Số điện thoại'} value={info.phone} handleValue={handleInfo} require={false} />
+          <Input name='address' title={'Địa chỉ'} value={info.address} handleValue={handleInfo} require={false} />
+          <Input name='age' title={'Tuổi'} value={info.age} handleValue={handleInfo} require={false} />
+
           <div className='addCustomer__group'>
             <label>
               Giới tính<span>*</span>
             </label>
             <div className='addCustomer__gender'>
               <div className='addCustomer__men'>
-                <input name='gender' type='radio' value='Nam' />
-                Nam
+                <input id='man' name='gender' type='radio' value='Nam' onChange={handleInfo} />
+                <label htmlFor='man'>Nam</label>
               </div>
               <div className='addCustomer__men'>
-                <input name='gender' type='radio' value='Nam' />
-                Nữ
+                <input id='woman' name='gender' type='radio' value='Nữ' onChange={handleInfo} />
+                <label htmlFor='woman'>Nữ</label>
               </div>
               <div className='addCustomer__men'>
-                <input name='gender' type='radio' value='Nam' />
-                Khác
+                <input id='other' name='gender' type='radio' value='Khác' onChange={handleInfo} />
+                <label htmlFor='other'>Khác</label>
               </div>
             </div>
           </div>
