@@ -15,6 +15,7 @@ import Warranty from './pages/Warranty';
 import Login from './pages/Login';
 import Financialreport from './pages/Report/FinancialReport';
 import Servicereport from './pages/Report/ServiceReport';
+import CustomerReport from './pages/Report/CustomerReport';
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
         <Route path='/detail-ratings' element={<Detailratings />} />
 
         {/* // */}
-
+        <Route path='/report-customer' element={<CustomerReport />} />
         <Route path='/report-service' element={<Servicereport />} />
         <Route path='/report-finance' element={<Financialreport />} />
       </Route>
