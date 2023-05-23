@@ -11,17 +11,20 @@ import Registercontract from './pages/Collaborator/Registercontract';
 import Customer from './pages/Customer';
 import AddCustomer from './pages/Customer/Add';
 import DetailCustomer from './pages/Customer/Detail';
-import Warranty from './pages/Warranty';
 import Login from './pages/Login';
 import Financialreport from './pages/Report/FinancialReport';
 import Servicereport from './pages/Report/ServiceReport';
 import CustomerReport from './pages/Report/CustomerReport';
+import InfoManage from './pages/Manage/InfoManage';
+import ListCollaborator from './pages/Manage/Collaborator';
+import AddCollaborator from './pages/Manage/Collaborator/Add';
+import RatingsCollaborators from './pages/Manage/Collaborator/Ratings';
+import DetailRatingsCollaborators from './pages/Manage/Collaborator/Detail';
 
 function App() {
   return (
     <Routes>
       <Route path='/login' element={<Login />}></Route>
-      <Route path='/warranty' element={<Warranty />}></Route>
 
       <Route path='/' element={<Home />}>
         <Route path='/' element={<Navigate to='/customer-list' />} />
@@ -45,6 +48,14 @@ function App() {
         <Route path='/report-customer' element={<CustomerReport />} />
         <Route path='/report-service' element={<Servicereport />} />
         <Route path='/report-finance' element={<Financialreport />} />
+
+        {/* // */}
+
+        <Route path='/infomation-manage' element={<InfoManage />}></Route>
+        <Route path='/collaborators-list' element={<ListCollaborator />}></Route>
+        <Route path='/collaborators-add' element={<AddCollaborator />}></Route>
+        <Route path='/collaborators-ratings' element={<RatingsCollaborators />}></Route>
+        <Route path='/detail-ratingsCollaborators' element={<DetailRatingsCollaborators />}></Route>
       </Route>
     </Routes>
   );
