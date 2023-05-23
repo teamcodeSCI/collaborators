@@ -1,17 +1,31 @@
 .home {
   width: 100%;
   display: flex;
-  &__sidebar {
-    max-width: 230px;
-    min-width: 230px;
-  }
   &__box {
     width: 100%;
   }
   &__main {
-    background: #f4f6f8;
+    background: url(../../../public/bg.jpg) center 0 no-repeat;
+    background-size: cover;
     overflow-x: auto;
     height: calc(100vh - 54px);
     padding: 20px 80px 40px;
+  }
+  @media (max-width: 820px) {
+    &__main {
+      padding: 10px 40px 40px;
+    }
+  }
+  @media (max-width: 767px) {
+    &__main {
+      background: url(../../../public/bg-m.jpg) center 0 no-repeat;
+
+      padding: 10px 30px 40px;
+    }
+  }
+  @media (max-width: 320px) {
+    &__main {
+      padding: 10px 20px 40px;
+    }
   }
 }

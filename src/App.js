@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from './layouts/Home';
+<<<<<<< HEAD
 import Collaborator from './pages/Collaborator';
 import Contract from './pages/Collaborator/Contract';
 import Detailratings from './pages/Collaborator/Detailratings';
@@ -20,10 +21,16 @@ import ListCollaborator from './pages/Manage/Collaborator';
 import AddCollaborator from './pages/Manage/Collaborator/Add';
 import RatingsCollaborators from './pages/Manage/Collaborator/Ratings';
 import DetailRatingsCollaborators from './pages/Manage/Collaborator/Detail';
+=======
+import Warranty from './pages/Warranty';
+import InfoCustomer from './pages/Warranty/InfoCustomer';
+import ServiceCustomer from './pages/Warranty/ServiceCustomer';
+>>>>>>> origin/main
 
 function App() {
   return (
     <Routes>
+<<<<<<< HEAD
       <Route path='/login' element={<Login />}></Route>
 
       <Route path='/' element={<Home />}>
@@ -56,6 +63,13 @@ function App() {
         <Route path='/collaborators-add' element={<AddCollaborator />}></Route>
         <Route path='/collaborators-ratings' element={<RatingsCollaborators />}></Route>
         <Route path='/detail-ratingsCollaborators' element={<DetailRatingsCollaborators />}></Route>
+=======
+      <Route path='/' element={<Home />}>
+        <Route path='/' element={<Navigate to='/bao-hanh' />} />
+        <Route path='/bao-hanh' element={<Warranty />}></Route>
+        <Route path='/thong-tin' element={<InfoCustomer />}></Route>
+        <Route path='/dich-vu-khach-hang' element={<ServiceCustomer />}></Route>
+>>>>>>> origin/main
       </Route>
     </Routes>
   );
