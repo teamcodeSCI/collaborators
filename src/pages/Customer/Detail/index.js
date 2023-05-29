@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BASE_URL, PUBLIC_URL } from '../../../utils/const';
+
 import './detailCustomer.scss';
 import NoticeModal from '../../../components/NoticeModal';
+import { PUBLIC_URL } from '../../../utils/const';
 
 const DetailCustomer = () => {
   const [deleteModal, isDeleteModal] = useState(false);
