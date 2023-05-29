@@ -13,7 +13,7 @@ const DetailCustomer = () => {
     <>
       <div className='detailCustomer'>
         <div className='detailCustomer__delete'>
-          <Link to={`${BASE_URL}/customer-list`} className='detailCustomer__arrow'>
+          <Link to={`/customer-list`} className='detailCustomer__arrow'>
             <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
             Quay lại
           </Link>

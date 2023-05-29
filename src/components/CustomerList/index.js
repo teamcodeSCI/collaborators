@@ -5,7 +5,7 @@ import { BASE_URL } from '../../utils/const';
 const CustomerList = (props) => {
   const navigate = useNavigate();
   const handleDetail = () => {
-    navigate(`${BASE_URL}/detail-customer/${props.id}`);
+    navigate(`/detail-customer/${props.id}`);
   };
   return (
     <tr className='customerlist' onClick={handleDetail}>
