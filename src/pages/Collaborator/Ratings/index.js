@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { PUBLIC_URL } from '../../../utils/const';
+import { BASE_URL, PUBLIC_URL } from '../../../utils/const';
 import './ratings.scss';
 
 const Ratings = () => {
   return (
     <div className='ratings'>
-      <Link to={'/collaborator'} className='ratings__arrow'>
+      <Link to={`${BASE_URL}/collaborator`} className='ratings__arrow'>
         <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
         Quay lại
       </Link>
@@ -24,7 +24,7 @@ const Ratings = () => {
                 <td>Hạng A</td>
                 <td>500.000.000</td>
                 <td>
-                  <Link to={'/detail-ratings'}>
+                  <Link to={`${BASE_URL}/detail-ratings`}>
                     <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
@@ -33,7 +33,7 @@ const Ratings = () => {
                 <td>Hạng B</td>
                 <td>400.000.000</td>
                 <td>
-                  <Link to={'/detail-ratings'}>
+                  <Link to={`${BASE_URL}/detail-ratings`}>
                     <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
@@ -42,7 +42,7 @@ const Ratings = () => {
                 <td>Hạng C</td>
                 <td>300.000.000</td>
                 <td>
-                  <Link to={'/detail-ratings'}>
+                  <Link to={`${BASE_URL}/detail-ratings`}>
                     <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>
@@ -51,7 +51,7 @@ const Ratings = () => {
                 <td>Hạng D</td>
                 <td>200.000.000</td>
                 <td>
-                  <Link to={'/detail-ratings'}>
+                  <Link to={`${BASE_URL}/detail-ratings`}>
                     <img src={`${PUBLIC_URL}/icons/pen.svg`} alt='' />
                   </Link>
                 </td>

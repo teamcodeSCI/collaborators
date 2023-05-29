@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { PUBLIC_URL } from '../../utils/const';
+import { BASE_URL, PUBLIC_URL } from '../../utils/const';
 import Pagination from '../../components/Pagination';
 import './customer.scss';
 import { customerList } from '../../routes/route';
@@ -19,7 +19,7 @@ const Customer = () => {
   return (
     <div className='customer'>
       <div className='customer__add'>
-        <Link to={'/add-customer'} className='customer__button'>
+        <Link to={`${BASE_URL}/add-customer`} className='customer__button'>
           + Thêm khách hàng
         </Link>
       </div>
