@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BASE_URL, PUBLIC_URL } from '../../utils/const';
+import { PUBLIC_URL } from '../../utils/const';
 import Pagination from '../../components/Pagination';
 import './customer.scss';
 import { customerList } from '../../routes/route';
