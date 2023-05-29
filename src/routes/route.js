@@ -54,11 +54,11 @@ export const menu =
 export const dropdownheader = [
   {
     name: 'Thông tin cá nhân',
-    link: '/collaborator',
+    link: `/collaborator`,
   },
   {
     name: 'Đăng xuất',
-    link: '/logout',
+    link: `/logout`,
   },
 ];
 
@@ -70,7 +70,7 @@ export const customerList = [
     address: 'Hà Nội',
     group: 'Đến cửa',
     created_at: '02/03/2023',
-    link: '/detail-customer',
+    link: `/detail-customer`,
   },
   {
     id: 'kn456',
@@ -79,7 +79,7 @@ export const customerList = [
     address: 'Hà Nam',
     group: 'Thành công',
     created_at: '02/03/2023',
-    link: '/detail-customer',
+    llink: `/detail-customer`,
   },
   {
     id: 'kn545',
@@ -88,7 +88,7 @@ export const customerList = [
     address: 'Nam Định',
     group: 'Không thành công',
     created_at: '02/03/2023',
-    link: '/detail-customer',
+    link: `/detail-customer`,
   },
 ];
 

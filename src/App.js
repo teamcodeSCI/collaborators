@@ -31,26 +31,26 @@ import TotalService from './pages/Manage/Report/ReportService/TotalService';
 function App() {
   return (
     <Routes>
-      <Route path='/login' element={<Login />}></Route>
-      <Route path='/warranty' element={<Warranty />}></Route>
+      <Route path={`/login`} element={<Login />}></Route>
+      <Route path={`/warranty`} element={<Warranty />}></Route>
 
-      <Route path='/' element={<Home />}>
-        <Route path='/' element={<Navigate to='/customer-list' />} />
-        <Route path='/customer-list' element={<Customer />} />
-        <Route path='/add-customer' element={<AddCustomer />} />
-        <Route path='/detail-customer/:id' element={<DetailCustomer />} />
+      <Route path={`/`} element={<Home />}>
+        <Route path={`/`} element={<Navigate to={`/customer-list`} />} />
+        <Route path={`/customer-list`} element={<Customer />} />
+        <Route path={`/add-customer`} element={<AddCustomer />} />
+        <Route path={`/detail-customer/:id`} element={<DetailCustomer />} />
 
         {/* // */}
 
-        <Route path='/collaborator' element={<Collaborator />} />
-        <Route path='/infomation' element={<Infomation />} />
+        <Route path={`/collaborator`} element={<Collaborator />} />
+        <Route path={`/infomation`} element={<Infomation />} />
 
-        <Route path='/contract' element={<Contract />} />
-        <Route path='/register-contract' element={<Registercontract />} />
-        <Route path='/detail-regist-contract' element={<Detailregistcontract />} />
+        <Route path={`/contract`} element={<Contract />} />
+        <Route path={`/register-contract`} element={<Registercontract />} />
+        <Route path={`/detail-regist-contract`} element={<Detailregistcontract />} />
 
-        <Route path='/ratings' element={<Ratings />} />
-        <Route path='/detail-ratings' element={<Detailratings />} />
+        <Route path={`/ratings`} element={<Ratings />} />
+        <Route path={`/detail-ratings`} element={<Detailratings />} />
 
         {/* // */}
         <Route path='/report-customer' element={<CustomerReport />} />

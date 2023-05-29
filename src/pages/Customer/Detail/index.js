@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import './detailCustomer.scss';
 import NoticeModal from '../../../components/NoticeModal';
 import { PUBLIC_URL } from '../../../utils/const';
@@ -13,7 +14,7 @@ const DetailCustomer = () => {
     <>
       <div className='detailCustomer'>
         <div className='detailCustomer__delete'>
-          <Link to={'/customer-list'} className='detailCustomer__arrow'>
+          <Link to={`/customer-list`} className='detailCustomer__arrow'>
             <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
             Quay lại
           </Link>

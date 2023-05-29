@@ -19,7 +19,7 @@ const Customer = () => {
   return (
     <div className='customer'>
       <div className='customer__add'>
-        <Link to={'/add-customer'} className='customer__button'>
+        <Link to={`/add-customer`} className='customer__button'>
           + Thêm khách hàng
         </Link>
       </div>

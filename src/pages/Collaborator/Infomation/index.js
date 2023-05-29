@@ -29,7 +29,7 @@ const Infomation = () => {
   };
   return (
     <div className='infomation'>
-      <Link to={'/collaborator'} className='infomation__arrow'>
+      <Link to={`/collaborator`} className='infomation__arrow'>
         <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
         Quay lại
       </Link>

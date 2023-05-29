@@ -19,7 +19,7 @@ const AddCustomer = () => {
   };
   return (
     <div className='addCustomer'>
-      <Link to={'/customer-list'} className='addCustomer__arrow'>
+      <Link to={`/customer-list`} className='addCustomer__arrow'>
         <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
         Quay lại
       </Link>

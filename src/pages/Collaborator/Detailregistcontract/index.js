@@ -19,7 +19,7 @@ const Detailregistcontract = () => {
   };
   return (
     <div className='detailregistcontract'>
-      <Link to={'/contract'} className='detailregistcontract__arrow'>
+      <Link to={`/contract`} className='detailregistcontract__arrow'>
         <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
         Quay lại
       </Link>

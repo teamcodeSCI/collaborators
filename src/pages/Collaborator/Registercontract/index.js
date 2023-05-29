@@ -13,7 +13,7 @@ const Registercontract = () => {
           <div className='registercontract__group'>Bạn chưa ký hợp đồng</div>
         </div>
         <div className='registercontract__submit'>
-          <Link to={'/detail-regist-contract'} className='registercontract__button'>
+          <Link to={`/detail-regist-contract`} className='registercontract__button'>
             Đăng ký ngay
           </Link>
         </div>

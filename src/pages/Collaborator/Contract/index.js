@@ -8,7 +8,7 @@ const Contract = () => {
   const [isContract, setIsContract] = useState(true);
   return (
     <div className='contract'>
-      <Link to={'/collaborator'} className='contract__arrow'>
+      <Link to={`/collaborator`} className='contract__arrow'>
         <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
         Quay lại
       </Link>
