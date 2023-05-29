@@ -8,7 +8,7 @@ const Login = () => {
       <div className='container'>
         <div className='login__box'>
           <div className='login__pic'>
-            <img src={`${PUBLIC_URL}/images/login.jpg`} />
+            <img src={`${PUBLIC_URL}/images/login.jpg`} alt='' />
           </div>
           <div className='login__detail'>
             <div className='login__form'>

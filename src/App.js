@@ -16,35 +16,36 @@ import Login from './pages/Login';
 import Financialreport from './pages/Report/FinancialReport';
 import Servicereport from './pages/Report/ServiceReport';
 import CustomerReport from './pages/Report/CustomerReport';
+import { BASE_URL } from './utils/const';
 
 function App() {
   return (
     <Routes>
-      <Route path='/login' element={<Login />}></Route>
-      <Route path='/warranty' element={<Warranty />}></Route>
+      <Route path={`${BASE_URL}/login`} element={<Login />}></Route>
+      <Route path={`${BASE_URL}/warranty`} element={<Warranty />}></Route>
 
-      <Route path='/' element={<Home />}>
-        <Route path='/' element={<Navigate to='/customer-list' />} />
-        <Route path='/customer-list' element={<Customer />} />
-        <Route path='/add-customer' element={<AddCustomer />} />
-        <Route path='/detail-customer/:id' element={<DetailCustomer />} />
-
-        {/* // */}
-
-        <Route path='/collaborator' element={<Collaborator />} />
-        <Route path='/infomation' element={<Infomation />} />
-
-        <Route path='/contract' element={<Contract />} />
-        <Route path='/register-contract' element={<Registercontract />} />
-        <Route path='/detail-regist-contract' element={<Detailregistcontract />} />
-
-        <Route path='/ratings' element={<Ratings />} />
-        <Route path='/detail-ratings' element={<Detailratings />} />
+      <Route path={`${BASE_URL}/`} element={<Home />}>
+        <Route path={`${BASE_URL}/`} element={<Navigate to={`${BASE_URL}/customer-list`} />} />
+        <Route path={`${BASE_URL}/customer-list`} element={<Customer />} />
+        <Route path={`${BASE_URL}/add-customer`} element={<AddCustomer />} />
+        <Route path={`${BASE_URL}/detail-customer/:id`} element={<DetailCustomer />} />
 
         {/* // */}
-        <Route path='/report-customer' element={<CustomerReport />} />
-        <Route path='/report-service' element={<Servicereport />} />
-        <Route path='/report-finance' element={<Financialreport />} />
+
+        <Route path={`${BASE_URL}/collaborator`} element={<Collaborator />} />
+        <Route path={`${BASE_URL}/infomation`} element={<Infomation />} />
+
+        <Route path={`${BASE_URL}/contract`} element={<Contract />} />
+        <Route path={`${BASE_URL}/register-contract`} element={<Registercontract />} />
+        <Route path={`${BASE_URL}/detail-regist-contract`} element={<Detailregistcontract />} />
+
+        <Route path={`${BASE_URL}/ratings`} element={<Ratings />} />
+        <Route path={`${BASE_URL}/detail-ratings`} element={<Detailratings />} />
+
+        {/* // */}
+        <Route path={`${BASE_URL}/report-customer`} element={<CustomerReport />} />
+        <Route path={`${BASE_URL}/report-service`} element={<Servicereport />} />
+        <Route path={`${BASE_URL}/report-finance`} element={<Financialreport />} />
       </Route>
     </Routes>
   );
