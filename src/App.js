@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Router, Routes } from 'react-router-dom';
 import Home from './layouts/Home';
 import Collaborator from './pages/Collaborator';
 import Contract from './pages/Collaborator/Contract';
