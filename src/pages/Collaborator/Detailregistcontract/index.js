@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { PUBLIC_URL } from '../../../utils/const';
+import { BASE_URL, PUBLIC_URL } from '../../../utils/const';
 import './detailregistcontract.scss';
 import Input from '../../../components/Input';
 const data = {
@@ -19,7 +19,7 @@ const Detailregistcontract = () => {
   };
   return (
     <div className='detailregistcontract'>
-      <Link to={'/contract'} className='detailregistcontract__arrow'>
+      <Link to={`${BASE_URL}/contract`} className='detailregistcontract__arrow'>
         <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
         Quay lại
       </Link>

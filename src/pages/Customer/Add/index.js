@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { PUBLIC_URL } from '../../../utils/const';
+import { BASE_URL, PUBLIC_URL } from '../../../utils/const';
 import './addCustomer.scss';
 import Input from '../../../components/Input';
 const data = {
@@ -19,7 +19,7 @@ const AddCustomer = () => {
   };
   return (
     <div className='addCustomer'>
-      <Link to={'/customer-list'} className='addCustomer__arrow'>
+      <Link to={`${BASE_URL}/customer-list`} className='addCustomer__arrow'>
         <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
         Quay lại
       </Link>
