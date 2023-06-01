@@ -15,10 +15,10 @@ const ReportService = () => {
             <img src={`${PUBLIC_URL}/icons/report2.svg`} alt='' />
             <p>Báo cáo tổng số dịch vụ</p>
           </Link>
-          <div className={reportSerStyles['reportService__item']}>
+          <Link to={'/report-detail-service-manage'} className={reportSerStyles['reportService__item']}>
             <img src={`${PUBLIC_URL}/icons/report2.svg`} alt='' />
             <p>Báo cáo dịch vụ chi tiết</p>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
