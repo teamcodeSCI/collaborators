@@ -27,6 +27,7 @@ import ReportCustomer from './pages/Manage/Report/ReportCustomer';
 import ReportRevenue from './pages/Manage/Report/ReportRevenue';
 import ReportService from './pages/Manage/Report/ReportService';
 import TotalService from './pages/Manage/Report/ReportService/TotalService';
+import DetailService from './pages/Manage/Report/ReportService/DetailService';
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
         <Route path='/report-revennue-manage' element={<ReportRevenue />}></Route>
         <Route path='/report-service-manage' element={<ReportService />}></Route>
         <Route path='/report-total-service-manage' element={<TotalService />}></Route>
+        <Route path='/report-detail-service-manage' element={<DetailService />}></Route>
       </Route>
     </Routes>
   );

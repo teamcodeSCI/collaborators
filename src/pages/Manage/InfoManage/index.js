@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Input from '../../../components/Input';
-import { PUBLIC_URL } from '../../../utils/const';
 import './infoManage.scss';
 
 const data = {
@@ -27,10 +25,6 @@ const InfoManage = () => {
   };
   return (
     <div className='infoManage'>
-      <Link to={'/collaborator'} className='infoManage__arrow'>
-        <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
-        Quay lại
-      </Link>
       <div className='infoManage__box'>
         <div className='infoManage__title'>
           <span>Thông tin tài khoản</span>
