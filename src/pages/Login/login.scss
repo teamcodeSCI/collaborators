@@ -40,33 +40,41 @@
   }
   &__input {
     text-align: left;
+    margin: 0 0 10px;
     label {
       color: #6f8cbe;
     }
     input {
       width: 100%;
       padding: 10px;
-      margin: 0 0 10px;
       border-radius: 25px;
       border: 1px solid #2386c7;
     }
   }
-  &__checkbox {
-    label {
-      color: #777;
-    }
-  }
+  
   &__button {
+    margin-top: 25px;
+    position: relative;
     button {
+      cursor: pointer;
       width: 100%;
       background: #2386c7;
       padding: 10px;
       border: none;
-      margin: 10px 0 0;
       border-radius: 25px;
       color: #fff;
       font-weight: 600;
       font-size: 18px;
+    }
+    p{
+      position: absolute;
+      left: 0;
+      top: 60px;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      font-style: italic;
+      color: red;
     }
   }
 }

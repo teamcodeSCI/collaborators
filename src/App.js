@@ -28,49 +28,62 @@ import ReportRevenue from './pages/Manage/Report/ReportRevenue';
 import ReportService from './pages/Manage/Report/ReportService';
 import TotalService from './pages/Manage/Report/ReportService/TotalService';
 import DetailService from './pages/Manage/Report/ReportService/DetailService';
+import ProtectedRoute from './routes/ProtectedRoute';
 
 function App() {
+  const role = 'user';
   return (
     <Routes>
       <Route path={`/login`} element={<Login />}></Route>
       <Route path={`/warranty`} element={<Warranty />}></Route>
 
-      <Route path={`/`} element={<Home />}>
-        <Route path={`/`} element={<Navigate to={`/customer-list`} />} />
-        <Route path={`/customer-list`} element={<Customer />} />
-        <Route path={`/add-customer`} element={<AddCustomer />} />
-        <Route path={`/detail-customer/:id`} element={<DetailCustomer />} />
+      <Route
+        path={`/`}
+        element={
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>
+        }
+      >
+        {role === 'ADMIN' ? (
+          <>
+            <Route path={`/`} element={<Navigate to={`/collaborators-list`} />} />
+            <Route path='/infomation-manage' element={<InfoManage />}></Route>
+            <Route path='/collaborators-list' element={<ListCollaborator />}></Route>
+            <Route path='/collaborators-add' element={<AddCollaborator />}></Route>
+            <Route path='/detail-collaborators/:id' element={<DetailCollaborator />} />
+            <Route path='/customer-collaborators' element={<CustomerCollaborators />}></Route>
+            <Route path='/collaborators-ratings' element={<RatingsCollaborators />}></Route>
+            <Route path='/detail-ratingsCollaborators' element={<DetailRatingsCollaborators />}></Route>
+            <Route path='/report-customer-manage' element={<ReportCustomer />}></Route>
+            <Route path='/report-revennue-manage' element={<ReportRevenue />}></Route>
+            <Route path='/report-service-manage' element={<ReportService />}></Route>
+            <Route path='/report-total-service-manage' element={<TotalService />}></Route>
+            <Route path='/report-detail-service-manage' element={<DetailService />}></Route>
+            <Route path={`/collaborator`} element={<Collaborator />} />
+          </>
+        ) : (
+          <>
+            <Route path={`/`} element={<Navigate to={`/customer-list`} />} />
+            <Route path={`/customer-list`} element={<Customer />} />
+            <Route path={`/add-customer`} element={<AddCustomer />} />
+            <Route path={`/detail-customer/:id`} element={<DetailCustomer />} />
+            {/* // */}
+            <Route path={`/collaborator`} element={<Collaborator />} />
+            <Route path={`/infomation`} element={<Infomation />} />
+            <Route path={`/contract`} element={<Contract />} />
+            <Route path={`/register-contract`} element={<Registercontract />} />
+            <Route path={`/detail-regist-contract`} element={<Detailregistcontract />} />
+            <Route path={`/ratings`} element={<Ratings />} />
+            <Route path={`/detail-ratings`} element={<Detailratings />} />
+            {/* // */}
+            <Route path='/report-customer' element={<CustomerReport />} />
+            <Route path='/report-service' element={<Servicereport />} />
+            <Route path='/report-finance' element={<Financialreport />} />
+          </>
+        )}
 
         {/* // */}
-
-        <Route path={`/collaborator`} element={<Collaborator />} />
-        <Route path={`/infomation`} element={<Infomation />} />
-
-        <Route path={`/contract`} element={<Contract />} />
-        <Route path={`/register-contract`} element={<Registercontract />} />
-        <Route path={`/detail-regist-contract`} element={<Detailregistcontract />} />
-
-        <Route path={`/ratings`} element={<Ratings />} />
-        <Route path={`/detail-ratings`} element={<Detailratings />} />
-
-        {/* // */}
-        <Route path='/report-customer' element={<CustomerReport />} />
-        <Route path='/report-service' element={<Servicereport />} />
-        <Route path='/report-finance' element={<Financialreport />} />
-
-        {/* // */}
-        <Route path='/infomation-manage' element={<InfoManage />}></Route>
-        <Route path='/collaborators-list' element={<ListCollaborator />}></Route>
-        <Route path='/collaborators-add' element={<AddCollaborator />}></Route>
-        <Route path='/detail-collaborators/:id' element={<DetailCollaborator />} />
-        <Route path='/customer-collaborators' element={<CustomerCollaborators />}></Route>
-        <Route path='/collaborators-ratings' element={<RatingsCollaborators />}></Route>
-        <Route path='/detail-ratingsCollaborators' element={<DetailRatingsCollaborators />}></Route>
-        <Route path='/report-customer-manage' element={<ReportCustomer />}></Route>
-        <Route path='/report-revennue-manage' element={<ReportRevenue />}></Route>
-        <Route path='/report-service-manage' element={<ReportService />}></Route>
-        <Route path='/report-total-service-manage' element={<TotalService />}></Route>
-        <Route path='/report-detail-service-manage' element={<DetailService />}></Route>
       </Route>
     </Routes>
   );
