@@ -6,14 +6,12 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   }
   &__title {
-    padding: 10px 7px;
+    padding: 20px 0 15px 5px;
+    margin: 0 40px;
     border-bottom: 1px solid #dee2e6;
-    span {
-      font-size: 20px;
-      font-weight: 500;
-      color: #000;
-      margin: 0 40px;
-    }
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
   }
   &__content {
     margin: 30px 40px;

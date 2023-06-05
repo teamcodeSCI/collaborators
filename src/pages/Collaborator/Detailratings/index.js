@@ -10,12 +10,12 @@ const Detailratings = () => {
         <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
         Quay lại
       </Link>
-      <div className='detailratings__name'>Chi tiết hoa hồng từng hạng thẻ</div>
+
       <div className='detailratings__box'>
         <div className='detailratings__title'>
-          <span>Hạng A (Doanh số: 500.000.000)</span>
+          <span>Hạng A </span> Doanh số: 500.000.000
         </div>
-        <div className='detailratings__content'>
+        <div className='detailratings__table'>
           <table className='table'>
             <tbody>
               <tr>

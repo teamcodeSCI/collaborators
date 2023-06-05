@@ -6,9 +6,7 @@ const Registercontract = () => {
   return (
     <div className='registercontract'>
       <div className='registercontract__box'>
-        <div className='registercontract__title'>
-          <span>Đăng ký hợp đồng</span>
-        </div>
+        <div className='registercontract__title'>Đăng ký hợp đồng</div>
         <div className='registercontract__content'>
           <div className='registercontract__group'>Bạn chưa ký hợp đồng</div>
         </div>

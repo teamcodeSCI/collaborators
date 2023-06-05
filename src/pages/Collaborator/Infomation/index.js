@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { PUBLIC_URL } from '../../../utils/const';
 import './infomation.scss';
 import Input from '../../../components/Input';
 
