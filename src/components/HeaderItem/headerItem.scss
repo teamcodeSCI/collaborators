@@ -6,9 +6,11 @@
   margin: 5px 0;
   cursor: pointer;
   transition: all 0.2s linear;
+  a {
+    width: 100%;
+    display: block;
+  }
   &:hover {
-    background: #0088ff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    background: #f1f1f1;
   }
 }

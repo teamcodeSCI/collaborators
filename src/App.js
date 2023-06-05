@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from './layouts/Home';
-import Collaborator from './pages/Collaborator';
 import Contract from './pages/Collaborator/Contract';
 import Detailratings from './pages/Collaborator/Detailratings';
 import Detailregistcontract from './pages/Collaborator/Detailregistcontract';
@@ -60,7 +59,6 @@ function App() {
             <Route path='/report-service-manage' element={<ReportService />}></Route>
             <Route path='/report-total-service-manage' element={<TotalService />}></Route>
             <Route path='/report-detail-service-manage' element={<DetailService />}></Route>
-            <Route path={`/collaborator`} element={<Collaborator />} />
           </>
         ) : (
           <>
@@ -69,7 +67,7 @@ function App() {
             <Route path={`/add-customer`} element={<AddCustomer />} />
             <Route path={`/detail-customer/:id`} element={<DetailCustomer />} />
             {/* // */}
-            <Route path={`/collaborator`} element={<Collaborator />} />
+
             <Route path={`/infomation`} element={<Infomation />} />
             <Route path={`/contract`} element={<Contract />} />
             <Route path={`/register-contract`} element={<Registercontract />} />

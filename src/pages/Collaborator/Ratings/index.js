@@ -6,10 +6,6 @@ import './ratings.scss';
 const Ratings = () => {
   return (
     <div className='ratings'>
-      <Link to={`/collaborator`} className='ratings__arrow'>
-        <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
-        Quay lại
-      </Link>
       <div className='ratings__name'>Hạng thẻ thành viên</div>
       <div className='ratings__box'>
         <div className='ratings__content'>

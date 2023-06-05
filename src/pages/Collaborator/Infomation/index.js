@@ -29,10 +29,6 @@ const Infomation = () => {
   };
   return (
     <div className='infomation'>
-      <Link to={`/collaborator`} className='infomation__arrow'>
-        <img src={`${PUBLIC_URL}/icons/arrow.svg`} alt='' />
-        Quay lại
-      </Link>
       <div className='infomation__box'>
         <div className='infomation__title'>
           <span>Thông tin tài khoản</span>
