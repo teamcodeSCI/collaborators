@@ -5,7 +5,7 @@ import Registercontract from '../Registercontract';
 import './contract.scss';
 
 const Contract = () => {
-  const [isContract, setIsContract] = useState(true);
+  const [isContract, setIsContract] = useState(false);
   return (
     <div className='contract'>
       <Link to={`/collaborator`} className='contract__arrow'>
@@ -23,6 +23,16 @@ const Contract = () => {
           </div>
           <div className='contract__content'>
             <div className='contract__group'>
+              <label>Bên A</label>
+              <input type='text' value='Nguyen Van A' disabled />
+            </div>
+            <div className='contract__group'>
+              <label>Bên B</label>
+              <input type='text' value='benhvienhongha' disabled />
+            </div>
+          </div>
+          <div className='contract__content'>
+            <div className='contract__group'>
               <label>
                 Ngày ký hợp đồng<span>*</span>
               </label>
@@ -35,8 +45,16 @@ const Contract = () => {
               <input type='text' value='500.000.000đ' disabled />
             </div>
           </div>
+          <div className='contract__content'>
+            <div className='contract__group'>
+              <label>
+                Ngày hết hạn hợp đồng<span>*</span>
+              </label>
+              <input type='text' value='01/01/2023' disabled />
+            </div>
+          </div>
           <div className='contract__des'>
-            <b>Thông tin hợp đồng</b> <br />
+            <b>Chi tiết hợp đồng</b> <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempore tenetur cum voluptatum quia veniam,
             assumenda, at praesentium in amet illo impedit dolor, natus iusto ad dolorem. Maiores, perferendis placeat?
           </div>

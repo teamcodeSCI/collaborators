@@ -82,15 +82,13 @@
   }
   table {
     border: 1px solid #dee2e6;
-    text-align: center;
     margin-bottom: 20px;
     th {
-      padding: 10px;
+      padding: 10px 20px;
       background: #f4f6f8;
-      text-align: center;
     }
     td {
-      padding: 10px;
+      padding: 10px 20px;
     }
   }
   &__line a {

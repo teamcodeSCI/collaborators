@@ -27,54 +27,74 @@ const Servicereport = () => {
           <table className='table'>
             <tbody>
               <tr>
+                <th>STT</th>
                 <th>Dịch vụ</th>
                 <th>Số lượng</th>
                 <th>Doanh thu</th>
+                <th>Ngày làm</th>
               </tr>
               <tr>
+                <td>1</td>
                 <td>Cắt mí plasma</td>
                 <td>1</td>
                 <td>10.000.000</td>
+                <td>01/01/2023</td>
               </tr>
               <tr>
+                <td>2</td>
                 <td>Nâng ngực</td>
                 <td>1</td>
                 <td>30.000.000</td>
+                <td>01/01/2023</td>
               </tr>
               <tr>
+                <td>3</td>
                 <td>Nâng mũi</td>
                 <td>2</td>
                 <td>60.000.000</td>
+                <td>01/01/2023</td>
               </tr>
               <tr>
+                <td>4</td>
                 <td>Cắt mí plasma</td>
                 <td>1</td>
                 <td>10.000.000</td>
+                <td>01/01/2023</td>
               </tr>
               <tr>
+                <td>5</td>
                 <td>Nâng ngực</td>
                 <td>1</td>
                 <td>30.000.000</td>
+                <td>01/01/2023</td>
               </tr>
               <tr>
+                <td>6</td>
                 <td>Nâng mũi</td>
                 <td>2</td>
                 <td>60.000.000</td>
+                <td>01/01/2023</td>
               </tr>
               <tr>
+                <td>7</td>
                 <td>Cắt mí plasma</td>
                 <td>1</td>
                 <td>10.000.000</td>
+                <td>01/01/2023</td>
               </tr>
               <tr>
+                <td>8</td>
                 <td>Nâng ngực</td>
                 <td>1</td>
                 <td>30.000.000</td>
+                <td>01/01/2023</td>
               </tr>
               <tr>
+                <td>9</td>
                 <td>Nâng mũi</td>
                 <td>2</td>
                 <td>60.000.000</td>
+                <td>01/01/2023</td>
               </tr>
             </tbody>
           </table>

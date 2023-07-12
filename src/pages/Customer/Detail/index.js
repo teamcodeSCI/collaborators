@@ -87,23 +87,43 @@ const DetailCustomer = () => {
               <tbody>
                 <tr>
                   <th>Dịch vụ</th>
-                  <th>Doanh thu</th>
+                  <th>Số tiền</th>
+                  <th>Đã cọc</th>
+                  <th>Số nợ</th>
+                  <th>Ngày làm</th>
+                  <th>Bác sĩ thực hiện</th>
                 </tr>
                 <tr>
                   <td>Cắt mí plasma</td>
                   <td>10.000.000</td>
+                  <td>2.000.000</td>
+                  <td>8.000.000</td>
+                  <td>01/01/2022</td>
+                  <td>Nguyễn Văn A</td>
                 </tr>
                 <tr>
                   <td>Nâng mũi</td>
                   <td>40.000.000</td>
+                  <td>2.000.000</td>
+                  <td>8.000.000</td>
+                  <td>01/01/2022</td>
+                  <td>Nguyễn Văn A</td>
                 </tr>
                 <tr>
                   <td>Nâng ngực</td>
                   <td>70.000.000</td>
+                  <td>2.000.000</td>
+                  <td>8.000.000</td>
+                  <td>01/01/2022</td>
+                  <td>Nguyễn Văn A</td>
                 </tr>
                 <tr>
                   <td>Hút mỡ bụng</td>
                   <td>30.000.000</td>
+                  <td>2.000.000</td>
+                  <td>8.000.000</td>
+                  <td>01/01/2022</td>
+                  <td>Nguyễn Văn A</td>
                 </tr>
               </tbody>
             </table>

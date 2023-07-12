@@ -63,21 +63,9 @@
       padding: 10px 20px;
       background: #f4f6f8;
       text-align: left;
-      &:nth-child(2) {
-        width: 20%;
-      }
-      &:nth-child(3) {
-        width: 20%;
-      }
     }
     td {
       padding: 10px 20px;
-      &:nth-child(2) {
-        width: 20%;
-      }
-      &:nth-child(3) {
-        width: 20%;
-      }
     }
   }
   &__line a {
@@ -95,6 +83,14 @@
       &:hover {
         background: #0088ff;
         color: #fff;
+      }
+    }
+    td {
+      &:nth-child(2) {
+        width: 18%;
+      }
+      &:nth-child(3) {
+        width: 44%;
       }
     }
   }
